@@ -3,29 +3,90 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Store</title>
+    <link rel="icon" href="/IMG/index-img/book-shop.png" type="png">
     <link href="/CSS/style.css" rel="stylesheet">
     <link href="/CSS/menu.css" rel="stylesheet">
     <style>
+ .page-heading{
+        text-align: center;
+        font-size: 60px;
+}
 
-        /* mobile screen */
-            @media screen and (max-width: 500px) {
+.card{
+    height: 100px;
+    width: 100px;
+    border: 10px solid black;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.menu-card{
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: -5px 5px 10px 2px #475d5b;
+    border: 0.5px solid #222928;
+    border-radius: 10px;
+}
+.menu-card:hover{
+    box-shadow: -5px 5px 10px 2px #111111;
+}
+.menu-icon{
+height: 200px;
+width: 175px;
+display: block;
+margin: 10px auto;
+}
+.menu-title{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.menu-button{
+    background-color: #b0ddd6;
+    border: 0.5px solid #222928; ;
+    color: #475d5b;
+    border-radius: 7px;
+    padding: 1px 5px;
+    display: block;
+    margin: 5px auto;
+    font-size: 15px;
+}
+.menu-button:hover{
+    background-color: #a4ece1;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+/* mobile screen */
+    @media screen and (max-width: 500px) {
+    .page-heading{
+        font-size: 35px;
+    }
+}
+/* tablet screen */
+    @media screen and (min-width: 501px)and(max-width: 768px) {
+    .page-heading{
+        font-size: 45px;
+    }
+}
+/* desktop screen*/
+     @media screen and (min-width: 769px) {
         
-            }
-        /* tablet screen */
-            @media screen and (min-width: 501px)and(max-width: 768px) {
+}
         
-            }
-        /* desktop screen*/
-            @media screen and (min-width: 769px) {
-        
-            }
-        
-        </style>
+</style>
 </head>
 <body class="body" >
-    <div >
-    <h1 class="text-center text-dark font-fam" style="font-size: 40px";>BOOKS</h1>
-    </div>
+    <h1 class="page-heading text-dark font-fam"> BUY BOOKS 📕</h1>
+
 <div class="menu-container">
     <div class="menu-card">
         <img src="/IMG/book-img/child1.jpg" class="menu-icon">

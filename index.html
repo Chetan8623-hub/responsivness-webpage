@@ -3,60 +3,102 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
+    <link rel="icon" href="/IMG/index-img/book-shop.png" type="png">
     <link href="/CSS/style.css" rel="stylesheet">
     <link href="/CSS/index.css" rel="stylesheet">
 <style>
-
-/* mobile screen */
-    @media screen and (max-width: 500px) {
-    .p-co{
-    display: none;
-  }
-  .header-img-container{
-    height: 200px;
-    width: 300px;
-    margin-left: 100px;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-  }
-  .header-info-container{
-    margin-top: 50px;
-    margin-left:130px ;
-  }
-  .header-section{
-    flex-wrap: wrap;
-    align-items:center;
-  }
-  .why-choose-us-container{
-    flex-wrap: wrap;
-    align-items:center;
-  }
-  .btn{
-    margin-left: 55px;
-  }
+    .page-heading{
+        text-align: center;
+        font-size: 60px;
     }
-    
+    .know-more{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        height: 100px;
+        width: 80px;
+        border-radius: 40%;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .image{
+        width: 300px;
+        height: 300px;
+    }
+    .header-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 500px;
+        font-size: 25px;
+    }
+
+
+
+/* Mobile screen */
+    @media screen and (max-width: 500px) {
+    .page-heading{
+        font-size: 35px;
+    }
+    .know-more{
+        height: 50px;
+        width: 50px;
+    }
+    .image{
+        width: 225px;
+        height: 225px;
+    }
+    .content{
+        font-size: 20px;
+    }
+    .second-content{
+        display: none;
+    }
+    .why-choose-us-container{
+    flex-wrap: wrap;
+    align-items:center;
+  }
+  .why-choose-us-card{
+    width: 170px;
+  }
+}
+
+
+/* Tablet screen */
+    @media screen and (min-width: 501px) and (max-width: 768px){
+    .page-heading{
+        font-size: 45px;
+    }
+    .know-more{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+/* Desktop screen */
+    @media screen and (min-width: 769px) {
+}
 </style>
 </head>
 <body class="body">
-    <div >
-    <h1 class="text-center text-dark font-fam" style="font-size: 40px;">BOOK STORE</h1>
-    <h2><p class="text-center"> Explore factual and real-life narratives covering <span class="highlight">history, science, culture, and more.</span></p></h2>
+    <h1 class="page-heading text-dark font-fam ">BOOK STORE 📕</h1>
+<div class="header-content">
+    <img src="/IMG/index-img/book-shop.png" class="image" alt="book-shop">
+<div class="content">
+    <p class="tag">Dive into real-life stories and factual content, covering topics such as history, science, politics, and culture. This section includes biographies, memoirs, essays, and more with just few clicks...👌👌👌</p>
+    <p class="second-content tag">A delightful collection of books for young readers, including picture books, early readers, and chapter books. Perfect for sparking a love of reading in children of all ages.</p>
 </div>
-<div class="header-section" >
-    <div class="header-img-container">
-    <img src="/IMG/index-img/book-shop.png" class="header-img">
-    </div>
-    <div class="header-info-container">
-        <h3 class="tag"> Dive into real-life stories and factual content, covering topics such as history, science, politics, and culture. This section includes biographies, memoirs, essays, and more with just few clicks...👌👌👌</h3>
-        <p class="p-co">A delightful collection of books for young readers, including picture books, early readers, and chapter books. Perfect for sparking a love of reading in children of all ages.</p>
-    <a href="./pages/book.html " class="no-underline">
-    <button class="bg-primary btn">Buy Book</button>
-    </a>
-    </div>
 </div>
-<h2 class="text-center why-choose-us text-dark font-fam">Why Choose Us</h2>
+
+    <a href="/PAGES/book.html" target="_blank">
+    <img src="/IMG/index-img/online-shopping.png" class="know-more" alt="click here to know more"></a>
+
+<h2 class="text-center why-choose-us text-dark font-fam page-heading">Why Choose Us</h2>
+
 <div class="why-choose-us-container">
     <div class="why-choose-us-card">
         <img src="/IMG/index-img/get-money.png" class="why-choose-us-img">
